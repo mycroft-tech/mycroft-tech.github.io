@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MYCROFT Blog - AI for factories</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #1C3D5A;
+            color: #FFFFFF;
+            height: 100%;
+        }
+        .top-bar {
+            background-color: #162F45;
+            padding: 10px 20px;
+            text-align: right;
+        }
+        .top-bar a {
+            color: #FFFFFF;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 300;
+            transition: color 0.3s;
+        }
+        .top-bar a:hover {
+            color: #D4A373;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: calc(100% - 50px);
+            padding: 40px 20px;
+            box-sizing: border-box;
+        }
+        h1 {
+            font-size: 4vw;
+            font-weight: 100;
+            letter-spacing: 0.3vw;
+            text-transform: uppercase;
+            margin: 0 0 40px 0;
+            word-wrap: break-word;
+        }
+        .blog-content {
+            max-width: 800px;
+            width: 90%;
+            background-color: #F2F2F2;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .blog-message {
+            font-size: 1.5rem;
+            font-weight: 300;
+            line-height: 1.6;
+            color: #1C3D5A;
+            text-align: center;
+        }
+        @media screen and (max-width: 768px) {
+            h1 {
+                font-size: 6vw;
+            }
+            .blog-message {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <a href="index.html">Home</a>
+    </div>
+    <div class="container">
+        <h1>MYCROFT Blog</h1>
+        <div class="blog-content">
+            <p class="blog-message">We are building, watch this space!</p>
+        </div>
+    </div>
+</body>
+</html>
