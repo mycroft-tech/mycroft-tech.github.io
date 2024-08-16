@@ -12,8 +12,8 @@
             font-family: 'Roboto', sans-serif;
             font-size: 16px; /* Base font size */
             background-color: #1C3D5A;
+            color: #FFFFFF;
             height: 100%;
-            color: #F2F2F2;
         }
         .top-bar {
             background-color: #162F45;
@@ -29,7 +29,7 @@
             transition: color 0.3s;
         }
         .container {
-            max-width: 800px;
+            max-width: 1600px;
             margin: 0 auto;
             padding: 40px 20px;
         }
@@ -125,6 +125,11 @@
         .button:hover {
             background-color: #F2F2F2;
         }
+        @media screen and (max-width: 768px) {
+            h1 {
+                font-size: 6vw;
+            }
+        }
     </style>
 </head>
 <body>
@@ -135,7 +140,7 @@
     <div class="container">
         <h1>MYCROFT</h1>
 
-        <p class="tagline"> Intelligent time series forecasting for your enterprise. </p>
+       <div class="tagline"> Intelligent time series forecasting for your enterprise. </div>
 
         <div class="value-prop-container">
             <div class="value-prop active" id="prop1">
