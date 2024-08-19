@@ -3,95 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MYCROFT Blog - Intelligent time series forecasting for your enterprise.</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <title>MYCROFT Blog - Intelligent Time Series Forecasting</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            font-family: 'Roboto', sans-serif;
-            font-size: 16px; /* Base font size */
-            background-color: #1C3D5A;
-            color: #FFFFFF;
-            height: 100%;
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #1a202c, #2d3748);
+            background-attachment: fixed;
         }
-        .top-bar {
-            background-color: #162F45;
-            padding: 10px 20px;
-            text-align: right;
-        }
-        .top-bar a {
-            color: #FFFFFF;
-            text-decoration: none;
-            font-size: 1.25rem;
-            font-weight: 300;
-            letter-spacing: 0.1rem;
-            transition: color 0.3s;
-        }
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-height: calc(100% - 50px);
-            padding: 40px 20px;
-            box-sizing: border-box;
-        }
-        h1 {
-            color: #FFFFFF;
-            font-size: 5.5vw;
-            min-font-size: 2.0rem;
-            font-weight: 300;
-            letter-spacing: 1.1vw;
-            text-transform: uppercase;
-            text-align: center;
-            margin: 0 0 40px 0;
-            word-wrap: break-word;
-            text-align: center;
-            margin-bottom: 150px;
-        }
-        .blog-content {
-            max-width: 1000px;
-            width: 90%;
-            background-color: #F2F2F2;
-            padding: 40px;
+        .glossy-bg {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
             border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        .blog-message {
-            font-size: 1.5rem;
-            font-weight: 300;
-            line-height: 1.6;
-            color: #1C3D5A;
-            text-align: center;
-        }
-        .copyright {
-            font-size: 1.0rem; /* Small font size */
-            text-align: center;
-            padding: 1rem 0;
-            margin-top: auto; /* Push to bottom */
-        }
-        @media screen and (max-width: 768px) {
-            h1 {
-                font-size: 6vw;
-            }
-            .blog-message {
-                font-size: 1.2rem;
-            }
+            border: 1px solid rgba(255, 255, 255, 0.2);
         }
     </style>
 </head>
-<body>
-    <div class="top-bar">
-        <a href="index.html">Home</a>
-    </div>
-    <div class="container">
-        <h1>MYCROFT Blog</h1>
-        <div class="blog-content">
-            <p class="blog-message">We are building, watch this space!</p>
+<body class="text-white min-h-screen">
+    <nav class="container mx-auto flex justify-between items-center py-8 px-4">
+        <a href="index.html" class="text-3xl font-light text-white">MYCROFT</a>
+        <a href="blog.html" class="text-white hover:text-gray-300 transition font-light">Blog</a>
+    </nav>
+
+    <header class="container mx-auto mt-24 text-center px-4">
+        <h1 class="text-6xl font-light mb-6">MYCROFT Blog</h1>
+    </header>
+
+    <main class="container mx-auto mt-24 px-4">
+        <section class="glossy-bg p-12 shadow-lg">
+            <h2 class="text-3xl font-light mb-6">We are building, watch this space!</h2>
+            <p class="text-gray-300 font-light text-xl">Stay tuned for exciting updates and insights into intelligent time series forecasting.</p>
+        </section>
+    </main>
+
+    <footer class="py-8 mt-24">
+        <div class="container mx-auto text-center text-gray-400 font-light">
+            © 2024 Ellora Analytics. All rights reserved.
         </div>
-    </div>
-    <footer class="copyright">
-        &copy; 2024 Ellora Analytics. All rights reserved.
     </footer>
 </body>
 </html>

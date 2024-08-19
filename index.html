@@ -3,218 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MYCROFT - Intelligent time series forecasting for your enterprise.</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <title>MYCROFT - Intelligent Time Series Forecasting</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            font-family: 'Roboto', sans-serif;
-            font-size: 16px; /* Base font size */
-            background-color: #1C3D5A;
-            color: #FFFFFF;
-            height: 100%;
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #1a202c, #2d3748);
+            background-attachment: fixed;
         }
-        .top-bar {
-            background-color: #162F45;
-            padding: 10px 20px;
-            text-align: right;
-        }
-        .top-bar a {
-            color: #FFFFFF;
-            text-decoration: none;
-            font-size: 1.25rem;
-            font-weight: 300;
-            letter-spacing: 0.1rem;
-            transition: color 0.3s;
-        }
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-        h1 {
-            color: #FFFFFF;
-            font-size: 5.5vw;
-            min-font-size: 2.0rem;
-            font-weight: 300;
-            letter-spacing: 1.5vw;
-            text-transform: uppercase;
-            text-align: center;
-            margin: 0 0 40px 0;
-            word-wrap: break-word;
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        .tagline {
-            font-size: 2.0rem;
-            font-weight: 300;
-            letter-spacing: 0.3rem;
-            text-align: center;
-            color: #D4A373;
-            margin-bottom: 100px;
-        }
-        .value-prop-container {
-            position: relative;
-            height: 200px;
-            overflow: hidden;
-            margin-bottom: 40px;
-        }
-        .value-prop {
-            position: absolute;
-            width: 100%;
-            background-color: #4A7C7B;
-            padding: 40px;
+        .glossy-bg {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
             border-radius: 10px;
-            box-sizing: border-box;
-            transition: transform 0.5s ease;
-            transform: translateX(100%);
-        }
-        .value-prop.active {
-            transform: translateX(0);
-        }
-        .value-prop-text {
-            font-size: 1.5rem;
-            font-weight: 300;
-            letter-spacing: 0.3rem;
-            text-align: center;
-            color: #FFFFFF;
-        }
-        .domains {
-            margin-bottom: 90px;
-        }
-        h2 {
-            color: #FFFFFF;
-            font-size: 2.0rem;
-            font-weight: 300;
-            letter-spacing: 0.3rem;
-            text-transform: uppercase;
-            text-align: center;
-            text-align: center;
-            margin-bottom: 50px;
-        }
-        .domain-list {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 30px;
-        }
-        .domain-item {
-            background-color: #4A7C7B;
-            padding: 20px;
-            border-radius: 5px;
-            flex-basis: calc(33.333% - 20px);
-            box-sizing: border-box;
-            font-size: 1.20rem;
-            font-weight: 350;
-            letter-spacing: 0.1rem;
-            text-align: center;
-            color: #FFFFFF;
-        }
-        .button {
-            display: inline-block;
-            background-color: #D4A373;
-            color: #1C3D5A;
-            padding: 15px 30px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1.5rem;
-            letter-spacing: 0.1rem;
-            font-weight: 400;
-            transition: background-color 0.3s ease;
-        }
-        .button:hover {
-            background-color: #F2F2F2;
-        }
-        .copyright {
-            font-size: 1.0rem; /* Small font size */
-            text-align: center;
-            padding: 1rem 0;
-            margin-top: auto; /* Push to bottom */
-        }
-
-        @media screen and (max-width: 768px) {
-            h1 {
-                font-size: 6vw;
-            }
+            border: 1px solid rgba(255, 255, 255, 0.2);
         }
     </style>
 </head>
-<body>
-    <div class="top-bar">
-        <a href="blog.html">Blog</a>
-    </div>
+<body class="text-white min-h-screen">
+    <nav class="container mx-auto flex justify-between items-center py-8 px-4">
+        <a href="index.html" class="text-3xl font-light text-white">MYCROFT</a>
+        <a href="blog.html" class="text-white hover:text-gray-300 transition font-light">Blog</a>
+    </nav>
 
-    <div class="container">
-        <h1>MYCROFT</h1>
+    <header class="container mx-auto mt-24 text-center px-4">
+        <h1 class="text-6xl font-light mb-6">MYCROFT</h1>
+        <p class="text-2xl text-gray-300 mb-12 font-light">Intelligent time series forecasting for your enterprise.</p>
+    </header>
 
-       <div class="tagline"> Intelligent time series forecasting for your enterprise. </div>
+    <main class="container mx-auto mt-24 px-4">
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-24">
+            <div class="glossy-bg p-8 shadow-lg hover:shadow-xl transition">
+                <h3 class="text-2xl font-light mb-4">Automated Feature Discovery Engine</h3>
+                <p class="text-gray-300 font-light">Uncover hidden patterns and insights in your data automatically.</p>
+            </div>
+            <div class="glossy-bg p-8 shadow-lg hover:shadow-xl transition">
+                <h3 class="text-2xl font-light mb-4">Probabilistic Forecasting with Coverage Guarantees</h3>
+                <p class="text-gray-300 font-light">Make data-driven decisions with confidence using our advanced forecasting techniques.</p>
+            </div>
+            <div class="glossy-bg p-8 shadow-lg hover:shadow-xl transition">
+                <h3 class="text-2xl font-light mb-4">Reproducibility and Robust MLOps</h3>
+                <p class="text-gray-300 font-light">Ensure consistency and reliability in your machine learning operations.</p>
+            </div>
+            <div class="glossy-bg p-8 shadow-lg hover:shadow-xl transition">
+                <h3 class="text-2xl font-light mb-4">Data Export for Advanced Analytics</h3>
+                <p class="text-gray-300 font-light">Seamlessly integrate with your existing analytics tools and workflows.</p>
+            </div>
+        </section>
 
-        <div class="value-prop-container">
-            <div class="value-prop active" id="prop1">
-                <div class="value-prop-text">Automated Feature Discovery Engine</div>
+        <section class="mb-24">
+            <h2 class="text-4xl font-light mb-12 text-center">Catalyse innovation across sectors</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+                <div class="glossy-bg p-6 text-center font-light">Financial Services</div>
+                <div class="glossy-bg p-6 text-center font-light">Industrie 4.0</div>
+                <div class="glossy-bg p-6 text-center font-light">Retail</div>
+                <div class="glossy-bg p-6 text-center font-light">Automotive</div>
+                <div class="glossy-bg p-6 text-center font-light">Healthcare</div>
+                <div class="glossy-bg p-6 text-center font-light">Energy</div>
             </div>
-            <div class="value-prop" id="prop2">
-                <div class="value-prop-text">Probabilistic Forecasting with Coverage Guarantees</div>
-            </div>
-            <div class="value-prop" id="prop3">
-                <div class="value-prop-text">Reproducibility and Robust MLOps</div>
-            </div>
-            <div class="value-prop" id="prop4">
-                <div class="value-prop-text">Data Export for Advanced Analytics</div>
-            </div>
+        </section>
+
+        <div class="text-center mb-24">
+            <a href="mailto:prasanna@mycroft.in" class="bg-blue-600 hover:bg-blue-700 text-white font-light py-3 px-6 rounded-full transition text-lg">Contact Us</a>
         </div>
+    </main>
 
-        <div class="domains">
-            <h2>Catalyse innovation across sectors</h2>
-
-            <div class="domain-list">
-                <div class="domain-item">Financial Services</div>
-                <div class="domain-item">Industrie 4.0</div>
-                <div class="domain-item">Retail</div>
-                <div class="domain-item">Automotive</div>
-                <div class="domain-item">Healthcare</div>
-                <div class="domain-item">Energy</div>
-            </div>
+    <footer class="py-8 mt-24">
+        <div class="container mx-auto text-center text-gray-400 font-light">
+            © 2024 Ellora Analytics. All rights reserved.
         </div>
-
-        <div style="text-align: center;">
-            <a href="mailto:prasanna@mycroft.in" class="button">Contact Us</a>
-        </div>
-    </div>
-
-    <script>
-        const props = document.querySelectorAll('.value-prop');
-        let currentProp = 0;
-
-        function moveProp() {
-            // Move current prop off screen to the left
-            props[currentProp].style.transform = 'translateX(-100%)';
-            props[currentProp].classList.remove('active');
-
-            setTimeout(() => {
-                // Move to next prop
-                currentProp = (currentProp + 1) % props.length;
-
-                // Reset the position of the next prop to the right
-                props[currentProp].style.transition = 'none';
-                props[currentProp].style.transform = 'translateX(100%)';
-
-                // Force a reflow to ensure the transition is removed before we add it back
-                void props[currentProp].offsetWidth;
-
-                // Re-enable the transition and move the prop into view
-                props[currentProp].style.transition = 'transform 0.5s ease';
-                props[currentProp].style.transform = 'translateX(0)';
-                props[currentProp].classList.add('active');
-            }, 500); // This should match the transition duration in CSS
-        }
-
-        // Start the animation
-        setInterval(moveProp, 5000);
-    </script>
-    <footer class="copyright">
-        &copy; 2024 Ellora Analytics. All rights reserved.
     </footer>
 </body>
 </html>
