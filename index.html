@@ -5,59 +5,152 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MYCROFT - Intelligent Time Series Forecasting</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Inter', sans-serif;
-            background: linear-gradient(135deg, #1a202c, #2d3748);
+            font-family: 'Courier Prime', monospace;
+            background-color: #000;
+            color: #fff;
             background-attachment: fixed;
         }
         .glossy-bg {
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.05);
             backdrop-filter: blur(10px);
             border-radius: 10px;
             border: 1px solid rgba(255, 255, 255, 0.2);
         }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        .text-white {
+            color: #fff;
+        }
+        .bg-black {
+            background-color: #000;
+        }
+        .text-black {
+            color: #000;
+        }
+        .bg-gray-800 {
+            background-color: #333;
+        }
+        .bg-gray-400 {
+            background-color: #bbb;
+        }
+        .text-gray-300 {
+            color: #ccc;
+        }
     </style>
 </head>
-<body class="text-white min-h-screen">
+
+<body class=" min-h-screen">
     <header class="p-6 flex justify-between items-center">
-        <a href="index.html" class="text-white hover:text-gray-300 transition font-light">Home</a>
-        <nav class="space-x-6">
+        <!--Logo -->
+        <a href="index.html" class="text-white hover:text-gray-300 transition font-light flex items-center space-x-2">
+            <div class="relative w-30 h-16 border-4 border-white flex items-center justify-center">
+                <img src="Assets/logo.png" alt="Logo" class="w-full h-full object-cover">
+            </div>
+         </a>
+
+        <!-- Navbar -->
+        <nav class="space-x-6 navbar">
+            <a href="index.html" class="text-white hover:text-gray-300">Home</a>
+            <a href="#about" class="text-white hover:text-gray-300">About</a>
+            <a href="#positions" class="text-white hover:text-gray-300">Available Positions</a>
+            <a href="#contact" class="text-white hover:text-gray-300">Contact</a>
         </nav>
     </header>
-    
+
     <main class="container mx-auto mt-24 px-4">
-         <h1 class="text-6xl font-light mb-12 text-center">MYCROFT</h1>
-        <p class="text-2xl text-gray-300 mb-12 font-light text-center">Intelligent time series forecasting for your enterprise.</p>
-        <section class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-24">
-            <div class="glossy-bg p-8 shadow-lg hover:shadow-xl transition">
-                <h3 class="text-2xl font-light mb-4">Automated Feature Discovery Engine</h3>
-                <p class="text-gray-300 font-light">Identify relevant data from hundreds of time series quickly.</p>
-            </div>
-            <div class="glossy-bg p-8 shadow-lg hover:shadow-xl transition">
-                <h3 class="text-2xl font-light mb-4">Probabilistic Forecasting with Coverage Guarantees</h3>
-                <p class="text-gray-300 font-light">Make data-driven decisions with confidence using our advanced forecasting techniques.</p>
-            </div>
-            <div class="glossy-bg p-8 shadow-lg hover:shadow-xl transition">
-                <h3 class="text-2xl font-light mb-4">Reproducibility and Robust MLOps</h3>
-                <p class="text-gray-300 font-light">All forecasts and models are reproducible and audit ready.</p>
-            </div>
-            <div class="glossy-bg p-8 shadow-lg hover:shadow-xl transition">
-                <h3 class="text-2xl font-light mb-4">Data Export for Advanced Analytics</h3>
-                <p class="text-gray-300 font-light">Seamlessly integrate with your existing analytics tools and workflows.</p>
-            </div>
-        </section>
-
-        <section class="mb-24">
-                 <h2 class="text-4xl font-light mb-12 text-center">Join the waitlist</h2>
-                <div class="glossy-bg p-8 shadow-lg">
-                    <div style="width:100%;height:500px;" data-fillout-id="bM2nC3RMgmus" data-fillout-embed-type="standard" data-fillout-inherit-parameters data-fillout-dynamic-resize></div>
-                </div>
-        </section>
-
-
+        <!-- Headline with Hover Effect -->
+        <h1 class="text-7xl font-semibold mb-12 text-center transition-transform duration-500 transform hover:scale-110 hover:text-white-400">
+            MYCROFT
+        </h1>
+        <p class="text-3xl text-gray-300 mb-12 font-light text-center">
+            Intelligent time series forecasting for your enterprise.
+        </p>
     </main>
+
+    <!-- Our Services Section -->
+    <section id="services" class="py-16 bg-black-900 text-white">
+        <h2 class="text-4xl font-light mb-12 text-center">Our Services</h2>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12">
+            <div class="glossy-bg p-8 shadow-lg hover:shadow-xl transition rounded-lg text-center hover:bg-white group">
+                <h3 class="text-2xl font-semibold mb-4 text-gray-300 group-hover:text-black transition">Automated Feature Discovery Engine</h3>
+                <p class="text-gray-300 group-hover:text-black transition">Identify relevant data from hundreds of time series quickly.</p>
+            </div>
+    
+            <div class="glossy-bg p-8 shadow-lg hover:shadow-xl transition rounded-lg text-center hover:bg-white group">
+                <h3 class="text-2xl font-semibold mb-4 text-gray-300 group-hover:text-black transition">Probabilistic Forecasting</h3>
+                <p class="text-gray-300 group-hover:text-black transition">Make data-driven decisions with confidence using our advanced forecasting techniques.</p>
+            </div>
+    
+            <div class="glossy-bg p-8 shadow-lg hover:shadow-xl transition rounded-lg text-center hover:bg-white group">
+                <h3 class="text-2xl font-semibold mb-4 text-gray-300 group-hover:text-black transition">Reproducibility & Robust MLOps</h3>
+                <p class="text-gray-300 group-hover:text-black transition">All forecasts and models are reproducible and audit ready.</p>
+            </div>
+    
+            <div class="glossy-bg p-8 shadow-lg hover:shadow-xl transition rounded-lg text-center hover:bg-white group">
+                <h3 class="text-2xl font-semibold mb-4 text-gray-300 group-hover:text-black transition">Data Export for Advanced Analytics</h3>
+                <p class="text-gray-300 group-hover:text-black transition">Seamlessly integrate with your existing analytics tools and workflows.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="positions" class="positions-section py-16 bg-black">
+        <h2 class="text-4xl font-light mb-12 text-center text-white">Available Positions</h2>
+    
+        <!-- Available positions -->
+        <div class="carousel-container flex justify-center items-center">
+            <div id="cards" class="flex flex-nowrap gap-12 justify-center">
+                
+                <div class="card p-8 shadow-lg transition rounded-lg flex flex-row items-center justify-between bg-black border-2 border-gray-700 w-[80%] transform hover:scale-105">
+                    <div class="text-left px-6">
+                        <img src="Assets/Backend.png" alt="Backend Icon" class="w-32 h-32 card-img-top">
+                        <h3 class="text-3xl font-semibold mb-4 text-white">Backend Intern</h3>
+                        <p class="text-gray-300 mb-4">We are seeking a creative and detail-oriented Frontend Engineering Intern to help craft exceptional user
+                            interfaces. You will work with modern web technologies while making thoughtful design decisions that enhance
+                            user experience.</p>
+                        <a href="Assets/backend-internship.pdf" class="inline-block text-center p-3 bg-gray-800 text-white rounded-md hover:bg-gray-700">Apply Now</a>
+                    </div>
+                
+                </div>
+    
+                <div class="card p-8 shadow-lg transition rounded-lg flex flex-row items-center justify-between bg-black border-2 border-gray-700 w-[80%] transform hover:scale-105">
+                    <div class="text-left px-6">
+                        <img src="Assets/Frontend.png" alt="Frontend Icon" class="w-50 h-32 card-img-top">
+                        <h3 class="text-3xl font-semibold mb-4 text-white">Frontend Intern</h3>
+                        <p class="text-gray-300 mb-4">We are looking for a curious and skilled Backend Engineering Intern to join our team. You will work on building
+                            and enhancing features through RESTful APIs, while gaining hands-on experience with cloud infrastructure
+                            and databases.</p>
+                        <a href="Assets/frontend-internship.pdf" class="inline-block text-center p-3 bg-gray-800 text-white rounded-md hover:bg-gray-700">Apply Now</a>
+                    </div>
+                </div>
+    
+                <div class="card p-8 shadow-lg transition rounded-lg flex flex-row items-center justify-between bg-black border-2 border-gray-700 w-[80%] transform hover:scale-105">
+                    <div class="text-left px-6">
+                        <img src="Assets/ML.png" alt="ML Icon" class="w-32 h-32 card-img-top">
+                        <h3 class="text-3xl font-semibold mb-4 text-white">Machine Learning Intern</h3>
+                        <p class="text-gray-300 mb-4">We are looking for a Machine Learning Intern with strong analytical skills to work on end-to-end ML solutions.
+                            You will tackle real business challenges while implementing practical machine learning solutions from conception
+                            to deployment.</p>
+                        <a href="Assets/ml-internship.pdf" class="inline-block text-center p-3 bg-gray-800 text-white rounded-md hover:bg-gray-700">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Contact section -->
+     <section class="mb-24" id="contact">
+        <h2 class="text-4xl font-light mb-12 text-center text-white">Contact Us</h2>
+        <p class="text-xl text-gray-300 text-center">Have any questions? Reach out to us via email at <a href="mailto:info@mycroft.com" class="text-blue-400">info@mycroft.com</a></p>
+        <div class="glossy-bg p-8 shadow-lg mt-12">
+            <div style="width:100%;height:500px;" data-fillout-id="bM2nC3RMgmus" data-fillout-embed-type="standard" data-fillout-inherit-parameters data-fillout-dynamic-resize></div>
+        </div>
+    </section>
+</main>
 
     <footer class="py-8 mt-24">
         <div class="container mx-auto text-center text-gray-400 font-light">
