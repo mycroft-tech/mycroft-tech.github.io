@@ -44,28 +44,24 @@
 </head>
 
 <body class=" min-h-screen">
-    <header class="p-6 flex justify-between items-center">
-        <!--Logo -->
-        <a href="index.html" class="text-white hover:text-gray-300 transition font-light flex items-center space-x-2">
-            <div class="relative w-30 h-16 border-4 border-white flex items-center justify-center">
-                <img src="Assets/logo.png" alt="Logo" class="w-full h-full object-cover">
-            </div>
-         </a>
+    <header class="p-6 flex justify-end items-center">
 
         <!-- Navbar -->
         <nav class="space-x-6 navbar">
             <a href="index.html" class="text-white hover:text-gray-300">Home</a>
-            <a href="#about" class="text-white hover:text-gray-300">About</a>
             <a href="#positions" class="text-white hover:text-gray-300">Available Positions</a>
             <a href="#contact" class="text-white hover:text-gray-300">Contact</a>
         </nav>
     </header>
 
     <main class="container mx-auto mt-24 px-4">
-        <!-- Headline with Hover Effect -->
-        <h1 class="text-7xl font-semibold mb-12 text-center transition-transform duration-500 transform hover:scale-110 hover:text-white-400">
-            MYCROFT
-        </h1>
+        <!-- Logo in place of headline -->
+        <div class="flex justify-center mb-12">
+            <div class="relative w-120 h-40 border-4 border-white flex items-center justify-center transition-transform duration-500 hover:scale-110 hover:border-gray-300">
+                <img src="Assets/logo.png" alt="MYCROFT Logo" class="w-full h-full object-cover">
+            </div>
+       </div>
+
         <p class="text-3xl text-gray-300 mb-12 font-light text-center">
             Intelligent time series forecasting for your enterprise.
         </p>
@@ -73,7 +69,7 @@
 
     <!-- Our Services Section -->
     <section id="services" class="py-16 bg-black-900 text-white">
-        <h2 class="text-4xl font-light mb-12 text-center">Our Services</h2>
+        <h2 class="text-4xl font-light mb-12 text-center"></h2>
         
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12">
             <div class="glossy-bg p-8 shadow-lg hover:shadow-xl transition rounded-lg text-center hover:bg-white group">
@@ -112,7 +108,7 @@
                         <p class="text-gray-300 mb-4">We are seeking a creative and detail-oriented Frontend Engineering Intern to help craft exceptional user
                             interfaces. You will work with modern web technologies while making thoughtful design decisions that enhance
                             user experience.</p>
-                        <a href="Assets/backend-internship.pdf" class="inline-block text-center p-3 bg-gray-800 text-white rounded-md hover:bg-gray-700">Apply Now</a>
+                        <a href="backend-intern.html" class="inline-block text-center p-3 bg-gray-800 text-white rounded-md hover:bg-gray-700">Details</a>
                     </div>
                 
                 </div>
@@ -124,7 +120,7 @@
                         <p class="text-gray-300 mb-4">We are looking for a curious and skilled Backend Engineering Intern to join our team. You will work on building
                             and enhancing features through RESTful APIs, while gaining hands-on experience with cloud infrastructure
                             and databases.</p>
-                        <a href="Assets/frontend-internship.pdf" class="inline-block text-center p-3 bg-gray-800 text-white rounded-md hover:bg-gray-700">Apply Now</a>
+                        <a href="frontend-intern.html" class="inline-block text-center p-3 bg-gray-800 text-white rounded-md hover:bg-gray-700">Details</a>
                     </div>
                 </div>
     
@@ -135,7 +131,7 @@
                         <p class="text-gray-300 mb-4">We are looking for a Machine Learning Intern with strong analytical skills to work on end-to-end ML solutions.
                             You will tackle real business challenges while implementing practical machine learning solutions from conception
                             to deployment.</p>
-                        <a href="Assets/ml-internship.pdf" class="inline-block text-center p-3 bg-gray-800 text-white rounded-md hover:bg-gray-700">Apply Now</a>
+                        <a href="ml-intern.html" class="inline-block text-center p-3 bg-gray-800 text-white rounded-md hover:bg-gray-700">Details</a>
                     </div>
                 </div>
             </div>
