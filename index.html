@@ -5,62 +5,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MYCROFT - Intelligent Time Series Forecasting</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Inter', sans-serif;
-            background: linear-gradient(135deg, #1a202c, #2d3748);
+            font-family: 'Courier Prime', monospace;
+            background-color: #F9F6EE;
+            color: #000;
             background-attachment: fixed;
         }
         .glossy-bg {
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.05);
             backdrop-filter: blur(10px);
             border-radius: 10px;
             border: 1px solid rgba(255, 255, 255, 0.2);
         }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        .text-white {
+            color: #fff;
+        }
+        .bg-black {
+            background-color: #000;
+        }
+        .text-black {
+            color: #000;
+        }
+        .bg-gray-800 {
+            background-color: #333;
+        }
+        .bg-gray-400 {
+            background-color: #bbb;
+        }
+        .text-gray-300 {
+            color: #ccc;
+        }
     </style>
 </head>
-<body class="text-white min-h-screen">
-    <header class="p-6 flex justify-between items-center">
-        <a href="index.html" class="text-white hover:text-gray-300 transition font-light">Home</a>
-        <nav class="space-x-6">
+
+<body class=" min-h-screen">
+    <header class="p-12 flex justify-end items-center">
+
+        <!-- Navbar -->
+        <nav class="space-x-6 navbar">
+            <a href="index.html" class="text-black hover:text-black">Home</a>
+            <a href="position.html" class="text-black hover:text-black">Careers</a>
+            <a href="#contact" class="text-black hover:text-black">Contact</a>
         </nav>
     </header>
-    
+
     <main class="container mx-auto mt-24 px-4">
-         <h1 class="text-6xl font-light mb-12 text-center">MYCROFT</h1>
-        <p class="text-2xl text-gray-300 mb-12 font-light text-center">Intelligent time series forecasting for your enterprise.</p>
-        <section class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-24">
-            <div class="glossy-bg p-8 shadow-lg hover:shadow-xl transition">
-                <h3 class="text-2xl font-light mb-4">Automated Feature Discovery Engine</h3>
-                <p class="text-gray-300 font-light">Identify relevant data from hundreds of time series quickly.</p>
+        <!-- Logo in place of headline -->
+        <div class="flex justify-center mb-12">
+            <div class="relative w-80 h-24 border-4 border-black flex items-center justify-center transition-transform duration-500 hover:scale-110 hover:border-black">
+                <img src="Assets/logo(2).png" alt="MYCROFT Logo" class="w-full h-full object-cover">
             </div>
-            <div class="glossy-bg p-8 shadow-lg hover:shadow-xl transition">
-                <h3 class="text-2xl font-light mb-4">Probabilistic Forecasting with Coverage Guarantees</h3>
-                <p class="text-gray-300 font-light">Make data-driven decisions with confidence using our advanced forecasting techniques.</p>
-            </div>
-            <div class="glossy-bg p-8 shadow-lg hover:shadow-xl transition">
-                <h3 class="text-2xl font-light mb-4">Reproducibility and Robust MLOps</h3>
-                <p class="text-gray-300 font-light">All forecasts and models are reproducible and audit ready.</p>
-            </div>
-            <div class="glossy-bg p-8 shadow-lg hover:shadow-xl transition">
-                <h3 class="text-2xl font-light mb-4">Data Export for Advanced Analytics</h3>
-                <p class="text-gray-300 font-light">Seamlessly integrate with your existing analytics tools and workflows.</p>
-            </div>
-        </section>
+       </div>
 
-        <section class="mb-24">
-                 <h2 class="text-4xl font-light mb-12 text-center">Join the waitlist</h2>
-                <div class="glossy-bg p-8 shadow-lg">
-                    <div style="width:100%;height:500px;" data-fillout-id="bM2nC3RMgmus" data-fillout-embed-type="standard" data-fillout-inherit-parameters data-fillout-dynamic-resize></div>
-                </div>
-        </section>
-
-
+        <p class="text-3xl text-black mb-16 font-light text-center">
+            Intelligent time series forecasting for your enterprise.
+        </p>
     </main>
 
+    <!-- Our Services Section -->
+    <section id="services" class="py-16 bg-black-900 text-black">
+        <h2 class="text-4xl font-light mb-12 text-center"></h2>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="glossy-bg p-6 shadow-lg hover:shadow-2xl transition-all duration-500 rounded-lg text-center hover:bg-black group">
+                <h3 class="text-2xl font-semibold mb-4 text-black group-hover:text-white transition">Automated Feature Discovery Engine</h3>
+                <p class="text-black group-hover:text-white transition">Identify relevant data from hundreds of time series quickly.</p>
+            </div>            
+    
+            <div class="glossy-bg p-6 shadow-lg hover:shadow-2xl transition-all duration-500 rounded-lg text-center hover:bg-black group">
+                <h3 class="text-2xl font-semibold mb-4 text-black group-hover:text-white transition">Probabilistic Forecasting</h3>
+                <p class="text-black group-hover:text-white transition">Make data-driven decisions with confidence using our advanced forecasting techniques.</p>
+            </div>
+    
+            <div class="glossy-bg p-6 shadow-lg hover:shadow-2xl transition-all duration-500 rounded-lg text-center hover:bg-black group">
+                <h3 class="text-2xl font-semibold mb-4 text-black group-hover:text-white transition">Reproducibility & Robust MLOps</h3>
+                <p class="text-black group-hover:text-white transition">All forecasts and models are reproducible and audit ready.</p>
+            </div>
+    
+            <div class="glossy-bg p-6 shadow-lg hover:shadow-2xl transition-all duration-500 rounded-lg text-center hover:bg-black group">
+                <h3 class="text-2xl font-semibold mb-4 text-black group-hover:text-white transition">Data Export for Advanced Analytics</h3>
+                <p class="text-black group-hover:text-white transition">Seamlessly integrate with your existing analytics tools and workflows.</p>
+            </div>
+        </div>
+    </section>
+
+  
+
+     <!-- Contact section -->
+     <section class="mb-24" id="contact">
+        <h2 class="text-4xl font-light mb-12 text-center text-black">Contact Us</h2>
+        <p class="text-xl text-black text-center">Have any questions? Reach out to us via email at <a href="mailto:info@mycroft.com" class="text-blue-400">prasanna@mycroft.in</a></p>
+        <div class="glossy-bg p-8 shadow-lg mt-12">
+            <div style="width:100%;height:500px;" data-fillout-id="bM2nC3RMgmus" data-fillout-embed-type="standard" data-fillout-inherit-parameters data-fillout-dynamic-resize></div>
+        </div>
+    </section>
+</main>
+
     <footer class="py-8 mt-24">
-        <div class="container mx-auto text-center text-gray-400 font-light">
+        <div class="container mx-auto text-center text-black font-light">
             © 2024 Ellora Analytics. All rights reserved.
         </div>
     </footer>
